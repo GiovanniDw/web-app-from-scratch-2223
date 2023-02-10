@@ -1,0 +1,19 @@
+{
+  "name": "visitekaartje",
+  "version": "1.0.0",
+  "main": "script.js",
+  "repository": "https://github.com/GiovanniDw/VisiteKaartje",
+  "author": "Giovanni",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass-loader": "^13.2.0"
+  },
+  "dependencies": {
+    "vite": "^4.1.1"
+  }
+}

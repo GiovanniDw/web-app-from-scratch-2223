@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(66, 134, 244, 1) 0%,
+    rgba(4, 37, 111, 1) 100%
+  );
+  color: #4286f4;
+}
+
+main {
+  max-width: 80em;
+}
+
+.center {
+  /* text-align: center; */
+  margin: 0 auto;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  padding: 1em;
+  margin: 0 auto;
+}
+h1 {
+  text-align: left;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  height: 100vh;
+  min-width: 50vw;
+
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  gap: 1em;
+  padding: 2em;
+  align-items: center;
+
+  min-width: 40em;
+
+  /* height: 30em; */
+  border-radius: 1em;
+  background: linear-gradient(
+    135deg,
+    rgba(4, 37, 111, 1) 0%,
+    rgba(66, 134, 244, 1) 100%
+  );
+  transition-duration: 500ms;
+  transition: all 1s ease-in-out;
+
+  transition: opacity 1s;
+  box-shadow: 3px 3px red, -1em 0 0.4em blue;
+}
+
+.card:hover {
+  min-width: 50em;
+  opacity: 0.5;
+  transition: all 1s ease-in-out;
+  /* background: linear-gradient(135deg, rgba(4,37,111,1) 0%, rgba(66,134,244,1) 100%); */
+}
+
+.card .avatar {
+  height: 15em;
+  width: 15em;
+  border: 1px solid red;
+  border-radius: 100%;
+}
+.card .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.card .content {
+  text-align: left;
+}
+
+.card .content .social {
+  display: flex;
+  gap: 1em;
+}
+.card .content .social a {
+  display: block;
+  height: 1em;
+  width: 1em;
+
+  border-radius: 100%;
+}
