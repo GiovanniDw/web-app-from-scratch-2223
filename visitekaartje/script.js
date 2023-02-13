@@ -29,11 +29,15 @@ function $$ (elements) {
   document.querySelectorAll(elements);
 }
 
+// let parentElement = document.querySelector('#parent');
+// for (let i = 0; i < 10; i++) {
+//   let newElement = document.createElement('p');
+//   newElement.textContent = 'This is paragraph number ' + (i + 1);
+//   parentElement.appendChild(newElement);
+// }
 
 
-
-// Scope ->  waar een binding leeft
-// 
+// Scope ->  waar een binding leeft// 
 
 
 //Hoisting -> Funcitons&variable Declaratiions worden naar de top van de scope gehoist
