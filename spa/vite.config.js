@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 
 export default defineConfig({
   server: {
@@ -6,5 +6,8 @@ export default defineConfig({
   },
   preview: {
     port: 8080,
+  },
+  define: {
+    'process.env': {}
   },
 });
