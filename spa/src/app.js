@@ -1,11 +1,20 @@
-// const apiKey = import.meta.env.RIJKSMUSEUM_API;
-const apiKey = 'S3GLzVAr';
+const apiKey = import.meta.env.VITE_RIJKSMUSEUM_API;
+// const apiKey = 'S3GLzVAr';
 
 const URL = `https://www.rijksmuseum.nl/api/en/collection?key=${apiKey}`;
+const rembrand = '&involvedMaker=Rembrandt+van+Rijn';
 
+const fullURL = URL + rembrand;
 
-console.log(apiKey);
+fetchData();
+console.log(fullURL);
 
-console.log()
+function fetchData() {
+  const data = fetch(fullURL)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+    });
+}
 
-// https://www.rijksmuseum.nl/api/en/collection?key=[api-key]&involvedMaker=Rembrandt+van+Rijn
+console.log(import.meta.env.VITE_RIJKSMUSEUM_API);
