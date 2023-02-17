@@ -1,0 +1,3 @@
+[submodule "spa"]
+	path = spa
+	url = https://github.com/GiovanniDw/spa.git
