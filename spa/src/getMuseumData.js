@@ -2,7 +2,6 @@ export const getMuseumData = (options) => {
   const { lang, apiKey, color, involvedMaker, URL } = options;
 
   return request(URL);
-
 };
 
 
@@ -26,3 +25,5 @@ export function fetchData(url) {
       console.log('Error');
     }
   };
+
+  

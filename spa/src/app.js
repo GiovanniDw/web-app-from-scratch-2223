@@ -18,11 +18,11 @@ const museumData = await getMuseumData(museumOptions);
 createMuseumItemWithTemplate(museumData);
 
 
-function createMuseumItemWithTemplate(museumData) {
+async function createMuseumItemWithTemplate(museumData) {
   const museumItems = museumData.artObjects;
-console.log(museumItems);
-  const article = document.createElement('article');
-  article.classList.add('art');
+  console.log(museumItems);
+  const articles = document.createElement('article');
+  articles.classList.add('art-container');
 
   const template = document.getElementById('museum-item');
 
@@ -32,7 +32,7 @@ console.log(museumItems);
     articleItem.querySelector('.image').src = museumItem.webImage.url;
     article.appendChild(articleItem);
   });
-  template.replaceWith(article);
+  template.replaceWith(articles);
 }
 
 // function createListWithTemplate(heroes: Hero[]) {
@@ -47,3 +47,4 @@ console.log(museumItems);
 //   });
 //   heroPlaceholder.replaceWith(ul);
 // }
+
