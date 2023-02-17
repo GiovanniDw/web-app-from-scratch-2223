@@ -12,7 +12,9 @@ const museumOptions = {
   URL: URL,
 };
 
-const museumData = getMuseumData(museumOptions);
+const museumData = await getMuseumData(museumOptions);
+
+ console.log(museumData)
 createMuseumItemWithTemplate(museumData);
 
 
