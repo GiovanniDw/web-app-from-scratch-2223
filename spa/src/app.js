@@ -1,4 +1,4 @@
-import { getMuseumData } from './getMuseumData';
+import { getMuseumData } from './getMuseumData.js';
 
 const apiKey = import.meta.env.VITE_RIJKSMUSEUM_API;
 const URL = `https://www.rijksmuseum.nl/api/en/collection?key=${apiKey}`;
