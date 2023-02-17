@@ -12,7 +12,7 @@ const museumOptions = {
   URL: URL,
 };
 
-const museumData = await getMuseumData(museumOptions);
+const museumData = getMuseumData(museumOptions);
 createMuseumItemWithTemplate(museumData);
 
 

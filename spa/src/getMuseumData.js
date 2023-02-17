@@ -6,7 +6,7 @@ export const getMuseumData = (options) => {
 };
 
 
-function fetchData(url) {
+export function fetchData(url) {
   const data = fetch(url)
     .then((res) => res.json())
     .then((data) => {
